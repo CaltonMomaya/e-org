@@ -6,7 +6,7 @@
       "use": "@vercel/node"
     },
     {
-      "src": "build.js",
+      "src": "build.sh",
       "use": "@vercel/static-build"
     },
     {
