@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/test/(.*)",
+      "dest": "/api/test/$1.js"
+    },
+    {
+      "src": "/api/mpesa/(.*)",
+      "dest": "/api/mpesa/$1.js"
+    },
+    {
+      "src": "/api/sales/(.*)",
+      "dest": "/api/sales/$1.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}

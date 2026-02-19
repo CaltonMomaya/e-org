@@ -1,0 +1,16 @@
+{
+  "name": "beeyond-trees-ecommerce",
+  "version": "1.0.0",
+  "description": "BEEyond Trees E-commerce Platform",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  }
+}
