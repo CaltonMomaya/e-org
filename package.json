@@ -4,8 +4,9 @@
   "description": "BEEyond Trees E-commerce Platform",
   "main": "index.html",
   "scripts": {
+    "build": "node build.js",
     "dev": "vercel dev",
-    "deploy": "vercel deploy --prod"
+    "deploy": "npm run build && vercel deploy --prod"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.39.0"
